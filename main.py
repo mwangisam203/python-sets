@@ -111,3 +111,33 @@ for x in {'Trousers', 'Commodities', 'shoes', 'Goods', 'socks', 'Money', 'Hoodie
         #socks
         #shoes
         #Money
+
+#Join Sets => .union() method
+set1 = {34, 89, 12, 92}
+set2 = {"abc", "dfg", "otp"}
+set3 = set1.union (set2)
+print(set3)  #Output: {34, 'otp', 89, 'abc', 12, 'dfg', 92}
+
+    #OR
+set1 = {34, 89, 12, 92}
+set2 = {"abc", "dfg", "otp"}
+set3 = set1 | set2
+print(set3) #Output {34, 'otp', 89, 'abc', 12, 'dfg', 92}
+            #NB this produces a sort of "NEW" set but with same items in sets involved.
+
+#Join Multiple sets
+set1 = {45, 56,907, 89, 90}
+set2 = {"abc", "dft", "vga"}
+set3 = {"maize", "apple", "carrots"}
+set4 = {"planet", "space"}
+set5 = set1.union(set2, set3,set4)
+print(set5)
+
+   #OR
+set1 = {45, 56,907, 89, 90}
+set2 = {"abc", "dft", "vga"}
+set3 = {"maize", "apple", "carrots"}
+set4 = {"planet", "space"}
+set5 = set1| set2 | set3| set4
+print(set5)
+#Output: {'maize', 'planet', 'abc', 'space', 'dft', 907, 45, 'carrots', 'apple', 'vga', 56, 89, 90}

@@ -13,6 +13,8 @@ This project contains examples and explanations of Python sets and frozensets.
 NB:The object in the update() method does not have to be a set, it can be any iterable object (tuples, lists, dictionaries etc.).
 
 -  Use the pop() method to remove an item, but this method will remove a random item
+-loop sets
+-Join Loops using various methods
 - Set operations
 - frozenset
 - add vs update
