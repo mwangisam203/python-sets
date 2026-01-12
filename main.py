@@ -76,3 +76,10 @@ print(currentset)  #Output: {'shoes', 'Trousers', 'Hoodies', 'Goods', 'Commoditi
 currentset = {'Trousers', 'Commodities', 'shoes', 'Goods', 'socks', 'Money', 'Hoodies'}
 currentset.discard("socks")
 print(currentset)  #Output: currentset = {'Trousers', 'Commodities', 'shoes', 'Goods', 'socks', 'Money', 'Hoodies'}
+
+#Remove item using => pop() method
+#This method removes random item
+currentset = {'Trousers', 'Commodities', 'shoes', 'Goods', 'socks', 'Money', 'Hoodies'}
+currentset.pop()
+print(currentset) #Output : {'Commodities', 'socks', 'Money', 'Goods', 'shoes', 'Trousers'}
+                # Any time it will remove different random item in the set
