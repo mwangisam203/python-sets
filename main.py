@@ -83,3 +83,31 @@ currentset = {'Trousers', 'Commodities', 'shoes', 'Goods', 'socks', 'Money', 'Ho
 currentset.pop()
 print(currentset) #Output : {'Commodities', 'socks', 'Money', 'Goods', 'shoes', 'Trousers'}
                 # Any time it will remove different random item in the set
+
+currentset = {'Trousers', 'Commodities', 'shoes', 'Goods', 'socks', 'Money', 'Hoodies'}
+x = currentset.pop()
+print (x) #Output: Commodities   #NB: Random item removed
+
+#The clear() method 
+myset = {"shoes", "Trousers", "Hoodies", "socks"}
+myset.clear()
+print(myset) #Output  set() 
+            #NB empties the set
+            #NB for del() method it will raise an error since it will erase the set completely
+
+#Loop Sets
+currentset = {'Trousers', 'Commodities', 'shoes', 'Goods', 'socks', 'Money', 'Hoodies'}
+for x in currentset:
+    print(x)
+
+    #Or
+for x in {'Trousers', 'Commodities', 'shoes', 'Goods', 'socks', 'Money', 'Hoodies'}:
+    print(x) 
+    #Output: 
+        # Goods
+        #Commodities
+        #Hoodies
+        #Trousers
+        #socks
+        #shoes
+        #Money
