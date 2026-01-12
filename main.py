@@ -265,4 +265,17 @@ print(x)   #Output: {'dft', 'maize', 'avocado', 'vga'}
 x = set1 ^ set2 
 print(x)  #Output: {'maize', 'vga', 'avocado', 'dft'}
 
-# The symmetric_difference_update() method
+# The symmetric_difference_update() method   =>set.symmetric_difference_update(set1)
+set1 = {45, "avocado", "abc", "orange", 907}
+set2 = {"abc", "dft", 45, 907, "orange", "maize","vga"}
+
+set1.symmetric_difference_update(set2)
+print(set1) #Output: {'vga', 'maize', 'avocado', 'dft'}   => method to keep the items that are not present in both sets
+
+        #OR shorter syntax Operator (^=)   =>set ^= set1 (formula)
+set1 = {45, "avocado", "abc", "orange", 907}
+set2 = {"abc", "dft", 45, 907, "orange", "maize","vga"}
+
+set1 ^= set2
+
+print(set1)   #Output: {'vga', 'maize', 'avocado', 'dft'}
