@@ -23,6 +23,9 @@ NB:The object in the update() method does not have to be a set, it can be any it
 -The intersection() method will return a new set, that only contains the items that are present in both sets.
     ## Use the & operator instead of the intersection() method => Same Result
 
+-The intersection_update() method will also keep ONLY the duplicates, but it will change the original set instead of returning a new set.
+    =>method removes the items that is not present in both sets
+
 
 - Set operations
 - frozenset

@@ -218,3 +218,22 @@ print(results) #Output {"abc"}
     #OR
 results = set1 & set2 & set3 & set4
 print(results) #Output: {'abc'}
+
+#The intersection_update() method
+set1 = {45, 56, "abc", 907, 89, 90}
+set2 = {"abc", "dft", "vga"}
+
+set1.intersection_update(set2)
+print(set1) #Output: {"abc"}   =>method removes the items that is not present in both sets
+
+#set.intersection_update(set1, set2 ... etc)
+
+    #OR use &= Operator  Shorter syntax (set &= set1 & set2 ... etc.)
+
+set1 = {45, 56, "abc", "maize", 907, 89, 90}
+set2 = {"abc", "dft", "maize","vga"}
+set3 = {"maize", "abc", "apple", "carrots"}
+set4 = {"planet", "maize","abc", "space"}
+
+set1 &= set2 & set3 & set4
+print(set1) #Output {'abc', 'maize'}
