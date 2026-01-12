@@ -237,3 +237,15 @@ set4 = {"planet", "maize","abc", "space"}
 
 set1 &= set2 & set3 & set4
 print(set1) #Output {'abc', 'maize'}
+
+#The difference() method 
+set1 = {45, "avocado", "abc", "orange", 907}
+set2 = {"abc", "dft", 907, "maize","vga"}
+set3 = {"maize", "abc", 45, "apple"}
+
+x = set1.difference(set2, set3)
+print(x) #Output {'orange', 'avocado'}  =>return a new set of items present in set1 but not present in other sets
+
+        #OR rn (-)operator
+x = set1 - set2 - set3
+print(x) #Output: {'orange', 'avocado'}
