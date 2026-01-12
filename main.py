@@ -165,3 +165,10 @@ set2 = {"abc", "dft", "vga"}
 set2.update(set1)
 
 print(set2) #Output: {'dft', 'abc', 'vga', 907, 45, 56, 89, 90}
+
+#Can also use |= insted of .update()
+set1 = {45, 56,9077, 89, 98}
+set2 = {"abcd", "dftk", "ovga"}
+set1 |= set2 
+print(set1) #Output: {'ovga', 98, 9077, 'dftk', 56, 89, 45, 'abcd'}  ...random indexing
+
