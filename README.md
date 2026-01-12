@@ -16,8 +16,13 @@ NB:The object in the update() method does not have to be a set, it can be any it
 -loop sets
 -Join Loops using various methods
     Join a set and a tuple
+
 -The update() method
     changes the original set, and does not return a new set.
+
+-The intersection() method will return a new set, that only contains the items that are present in both sets.
+    ## Use the & operator instead of the intersection() method => Same Result
+
 
 - Set operations
 - frozenset

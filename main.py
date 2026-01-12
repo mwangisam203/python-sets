@@ -16,7 +16,7 @@ print(len(myset))
             #output: 6
 
 
-#Duplicates are ignorde
+#Duplicates are ignored
 set1 = {"apple", "banana", "apple", "cherry"}
 set2 = {1, 5, 5, 7, 9, 3}
 set3 = {True, 1, 0, False, False}
@@ -190,3 +190,18 @@ z = {"cherry", "micra", "bluebird"}
 x.update(y, z)
 
 print(x) #Ouput: {'banana', 'bluebird', 'cherry', 'microsoft', 'micra', 'google', 'apple'}
+
+# intersection() method
+# It Join set1 and set2, but keep only the duplicates:
+set1 = {"cat", "dog", "cow", "goat"}
+set2 = {"goat", "lion", "hyena"}
+
+setX = set1.intersection(set2)
+print(setX) #Output: goat
+
+# Use the & operator instead of the intersection() method => Same Result
+set1 = {"cat", "dog", "cow", "goat"}
+set2 = {"goat", "lion", "hyena"}
+
+setX = set1 & set2
+print(setX) 
