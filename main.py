@@ -32,3 +32,9 @@ print(set3)
 mixedset = {"abc", 134, 1, "Goat", True, 45, 0, "male"}
 print(mixedset)
             # output {'abc', 1, 0, 'male', 'Goat', 134, 45}
+
+
+#set constructor
+myset = set(("shoes", "Trousers", "Hoodies", "socks"))
+print(myset)
+            #output {'shoes', 'Hoodies', 'socks', 'Trousers'}
