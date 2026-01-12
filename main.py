@@ -170,5 +170,23 @@ print(set2) #Output: {'dft', 'abc', 'vga', 907, 45, 56, 89, 90}
 set1 = {45, 56,9077, 89, 98}
 set2 = {"abcd", "dftk", "ovga"}
 set1 |= set2 
+
 print(set1) #Output: {'ovga', 98, 9077, 'dftk', 56, 89, 45, 'abcd'}  ...random indexing
 
+#more samples
+a = {7, 13, 4, 90}
+b = {87, 16, 9}
+c = {45, 87, 63}
+
+a |= b | c  #logic operation formula
+
+print(a) #output {4, 7, 9, 13, 45, 16, 87, 90, 63}
+
+#More .update sample formula
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+z = {"cherry", "micra", "bluebird"}
+
+x.update(y, z)
+
+print(x) #Ouput: {'banana', 'bluebird', 'cherry', 'microsoft', 'micra', 'google', 'apple'}
