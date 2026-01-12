@@ -14,3 +14,5 @@ print(myset)
 myset = {"shoes", "Trousers", 1, 0, True, "Hoodies", "socks", False}
 print(len(myset))
             #output 6
+
+
