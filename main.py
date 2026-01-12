@@ -45,4 +45,17 @@ for x in myset:
     print(x) #output: socks, Trousers, shoes, Hoodies
 
 print("Trousers" in myset)
+print("socks" not in myset)
             # Output:True
+            #Output: False
+
+# add() method
+myset = {"shoes", "Trousers", "Hoodies", "socks"}
+myset.add("Sheets")
+print(myset) #Output {'Trousers', 'shoes', 'Sheets', 'Hoodies', 'socks'}
+
+# update() method
+myset = {"shoes", "Trousers", "Hoodies", "socks"}
+hiddenset = {"Xbox", "Soundbar", "Fridge"}
+myset.update(hiddenset)
+print(myset) #Output: {'Hoodies', 'socks', 'Xbox', 'Soundbar', 'Fridge', 'Trousers', 'shoes'}
