@@ -197,11 +197,11 @@ set1 = {"cat", "dog", "cow", "goat"}
 set2 = {"goat", "lion", "hyena"}
 
 setX = set1.intersection(set2)
-print(setX) #Output: goat
+print(setX) #Output: {'goat'}
 
 # Use the & operator instead of the intersection() method => Same Result
 set1 = {"cat", "dog", "cow", "goat"}
 set2 = {"goat", "lion", "hyena"}
 
 setX = set1 & set2
-print(setX) 
+print(setX) #Output: {'goat'}
