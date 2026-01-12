@@ -15,6 +15,10 @@ NB:The object in the update() method does not have to be a set, it can be any it
 -  Use the pop() method to remove an item, but this method will remove a random item
 -loop sets
 -Join Loops using various methods
+    Join a set and a tuple
+-The update() method
+    changes the original set, and does not return a new set.
+
 - Set operations
 - frozenset
 - add vs update

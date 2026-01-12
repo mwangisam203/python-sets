@@ -131,6 +131,7 @@ set2 = {"abc", "dft", "vga"}
 set3 = {"maize", "apple", "carrots"}
 set4 = {"planet", "space"}
 set5 = set1.union(set2, set3,set4)
+
 print(set5)
 
    #OR
@@ -139,5 +140,28 @@ set2 = {"abc", "dft", "vga"}
 set3 = {"maize", "apple", "carrots"}
 set4 = {"planet", "space"}
 set5 = set1| set2 | set3| set4
+
 print(set5)
 #Output: {'maize', 'planet', 'abc', 'space', 'dft', 907, 45, 'carrots', 'apple', 'vga', 56, 89, 90}
+#NB |OPERATOR joins only a set to another set(s) unlike .union
+
+#JOIN SET AND a TUPLE
+x = {"a", "b", "c"}
+y = (4, 2, 9)
+
+z = x.union(y)
+print(z) #Output: {2, 4, 9, 'b', 'a', 'c'}
+
+#The update() method
+set1 = {45, 56,907, 89, 90}
+set2 = {"abc", "dft", "vga"}
+set1.update(set2)
+
+print(set1) #Output: {'dft', 'abc', 'vga', 56, 89, 90, 907, 45}
+
+    #OR
+set1 = {45, 56,907, 89, 90}
+set2 = {"abc", "dft", "vga"}
+set2.update(set1)
+
+print(set2) #Output: {'dft', 'abc', 'vga', 907, 45, 56, 89, 90}
