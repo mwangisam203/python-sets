@@ -52,10 +52,27 @@ print("socks" not in myset)
 # add() method
 myset = {"shoes", "Trousers", "Hoodies", "socks"}
 myset.add("Sheets")
-print(myset) #Output {'Trousers', 'shoes', 'Sheets', 'Hoodies', 'socks'}
+print(myset) #Output: {'Trousers', 'shoes', 'Sheets', 'Hoodies', 'socks'}
 
 # update() method
 myset = {"shoes", "Trousers", "Hoodies", "socks"}
 hiddenset = {"Xbox", "Soundbar", "Fridge"}
 myset.update(hiddenset)
 print(myset) #Output: {'Hoodies', 'socks', 'Xbox', 'Soundbar', 'Fridge', 'Trousers', 'shoes'}
+
+#Example 2. update any as long as its iterable
+myset = {"shoes", "Trousers", "Hoodies", "socks"}
+mylist = ["Money", "Goods", "Commodities"]
+myset.update(mylist)
+print(myset) #Output: {'Trousers', 'Commodities', 'shoes', 'Goods', 'socks', 'Money', 'Hoodies'}
+
+#Remove item from set => remove() method
+currentset = {'Trousers', 'Commodities', 'shoes', 'Goods', 'socks', 'Money', 'Hoodies'}
+currentset.remove("socks")
+print(currentset)  #Output: {'shoes', 'Trousers', 'Hoodies', 'Goods', 'Commodities', 'Money'}
+
+# Remove using => discard() method
+#NB discard() does not raise an error in cases where an item does not exist
+currentset = {'Trousers', 'Commodities', 'shoes', 'Goods', 'socks', 'Money', 'Hoodies'}
+currentset.discard("socks")
+print(currentset)  #Output: currentset = {'Trousers', 'Commodities', 'shoes', 'Goods', 'socks', 'Money', 'Hoodies'}
