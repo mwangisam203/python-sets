@@ -26,3 +26,9 @@ print(set3)
             #output {'apple', 'banana', 'cherry'}
                    # {1, 3, 5, 7, 9}
                    # {0, True}
+
+
+#mixed data types
+mixedset = {"abc", 134, 1, "Goat", True, 45, 0, "male"}
+print(mixedset)
+            # output {'abc', 1, 0, 'male', 'Goat', 134, 45}
