@@ -16,3 +16,13 @@ print(len(myset))
             #output 6
 
 
+#Duplicates are ignorde
+set1 = {"apple", "banana", "apple", "cherry"}
+set2 = {1, 5, 5, 7, 9, 3}
+set3 = {True, 1, 0, False, False}
+print(set1)
+print(set2)
+print(set3)
+            #output {'apple', 'banana', 'cherry'}
+                   # {1, 3, 5, 7, 9}
+                   # {0, True}
