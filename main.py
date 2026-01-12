@@ -192,7 +192,7 @@ x.update(y, z)
 print(x) #Ouput: {'banana', 'bluebird', 'cherry', 'microsoft', 'micra', 'google', 'apple'}
 
 # intersection() method
-# It Join set1 and set2, but keep only the duplicates:
+# It Join sets but keep only the duplicates:
 set1 = {"cat", "dog", "cow", "goat"}
 set2 = {"goat", "lion", "hyena"}
 
@@ -205,3 +205,16 @@ set2 = {"goat", "lion", "hyena"}
 
 setX = set1 & set2
 print(setX) #Output: {'goat'}
+
+#example2
+set1 = {45, 56, "abc", 907, 89, 90}
+set2 = {"abc", "dft", "vga"}
+set3 = {"maize", "abc", "apple", "carrots"}
+set4 = {"planet", "abc", "space"}
+
+results = set1.intersection(set2, set3, set4)
+print(results) #Output {"abc"} 
+
+    #OR
+results = set1 & set2 & set3 & set4
+print(results) #Output: {'abc'}
