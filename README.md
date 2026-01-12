@@ -29,6 +29,8 @@ NB:The object in the update() method does not have to be a set, it can be any it
 -The difference() method 
     =>will return a new set that will contain only the items from the first set that are not present in the other set.
 
+-The symmetric_difference() method will keep only the elements that are NOT present in both sets.
+
 - Set operations
 - frozenset
 - add vs update

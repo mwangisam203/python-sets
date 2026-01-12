@@ -243,9 +243,26 @@ set1 = {45, "avocado", "abc", "orange", 907}
 set2 = {"abc", "dft", 907, "maize","vga"}
 set3 = {"maize", "abc", 45, "apple"}
 
-x = set1.difference(set2, set3)
+x = set1.difference(set2, set3)        # => set.difference(set1, set2 ... etc.)
+
 print(x) #Output {'orange', 'avocado'}  =>return a new set of items present in set1 but not present in other sets
 
         #OR rn (-)operator
-x = set1 - set2 - set3
+x = set1 - set2 - set3          # => set - set1 - set2 .... etc.
+
 print(x) #Output: {'orange', 'avocado'}
+
+#The symmetric_difference() method => keep only the elements that are NOT present in both sets
+set1 = {45, "avocado", "abc", "orange", 907}
+set2 = {"abc", "dft", 45, 907, "orange", "maize","vga"}
+
+x = set1.symmetric_difference(set2)       # =>set.symmetric_difference(set1)
+
+print(x)   #Output: {'dft', 'maize', 'avocado', 'vga'}
+            #NB this take arguments for only two sets 
+
+            #OR use (^) operator
+x = set1 ^ set2 
+print(x)  #Output: {'maize', 'vga', 'avocado', 'dft'}
+
+# The symmetric_difference_update() method
