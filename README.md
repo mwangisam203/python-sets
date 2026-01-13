@@ -32,8 +32,11 @@ NB:The object in the update() method does not have to be a set, it can be any it
 -The symmetric_difference() method will keep only the elements that are NOT present in both sets.
 
 -The symmetric_difference_update() method will also keep all but the duplicates, but it will change the original set instead of returning a new set.
+
 - Set operations
+
 - frozenset
+    frozenset is an immutable version of a set.
 - add vs update
 - disjoint sets
 

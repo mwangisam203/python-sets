@@ -4,7 +4,7 @@ print(myset)
             #output: {"Socks", "Trousers", "Shoes", "Hoodies"}
 
 
-#True and 1, False and 0
+#True and 1 =>are same| False and 0  => are same
 myset = {"shoes", "Trousers", 1, True, "Hoodies", 0, "socks", False}
 print(myset)
             #output: {False, 1, 'Hoodies', 'shoes', 'Trousers', 'socks'}
@@ -75,7 +75,7 @@ print(currentset)  #Output: {'shoes', 'Trousers', 'Hoodies', 'Goods', 'Commoditi
 #NB discard() does not raise an error in cases where an item does not exist
 currentset = {'Trousers', 'Commodities', 'shoes', 'Goods', 'socks', 'Money', 'Hoodies'}
 currentset.discard("socks")
-print(currentset)  #Output: currentset = {'Trousers', 'Commodities', 'shoes', 'Goods', 'socks', 'Money', 'Hoodies'}
+print(currentset)  #Output: currentset = {'Trousers', 'Commodities', 'shoes', 'Goods', 'Money', 'Hoodies'}
 
 #Remove item using => pop() method
 #This method removes random item
@@ -86,7 +86,7 @@ print(currentset) #Output : {'Commodities', 'socks', 'Money', 'Goods', 'shoes', 
 
 currentset = {'Trousers', 'Commodities', 'shoes', 'Goods', 'socks', 'Money', 'Hoodies'}
 x = currentset.pop()
-print (x) #Output: Commodities   #NB: Random item removed
+print (x) #Output: Commodities   #NB: Prints random item removed
 
 #The clear() method 
 myset = {"shoes", "Trousers", "Hoodies", "socks"}
@@ -279,3 +279,8 @@ set2 = {"abc", "dft", 45, 907, "orange", "maize","vga"}
 set1 ^= set2
 
 print(set1)   #Output: {'vga', 'maize', 'avocado', 'dft'}
+
+#Frozenset => Use the frozenset()
+fs = frozenset({45, "avocado", "abc", "orange", 907})
+print(fs) #Output: frozenset({'orange', 907, 'avocado', 'abc', 45})
+print(type(fs)) #Output: <class 'frozenset'>
